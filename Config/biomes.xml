@@ -1,0 +1,56 @@
+<configs>
+
+	<append xpath="/worldgeneration/spectra">
+		<!-- add a new custom spectrum -->
+		<spectrum name="SpectraGreen">
+			<texture type="sky" path="#@modfolder:Resources/SpectraGreen.unity3d?sky"/>
+			<texture type="ambient" path="#@modfolder:Resources/SpectraGreen.unity3d?ambient"/>
+			<texture type="sun" path="#@modfolder:Resources/SpectraGreen.unity3d?sun"/>
+			<texture type="moon" path="#@modfolder:Resources/SpectraGreen.unity3d?moon"/>
+			<texture type="fog" path="#@modfolder:Resources/SpectraGreen.unity3d?fog"/>
+			<texture type="fogfade" path="#@modfolder:Resources/SpectraGreen.unity3d?fogfade"/>
+		</spectrum>
+		<!-- overload existing spectrum -->
+		<spectrum name="Snowy">
+			<texture type="sky" path="#@modfolder:Resources/SpectraGreen.unity3d?sky"/>
+			<texture type="ambient" path="#@modfolder:Resources/SpectraGreen.unity3d?ambient"/>
+			<texture type="sun" path="#@modfolder:Resources/SpectraGreen.unity3d?sun"/>
+			<texture type="moon" path="#@modfolder:Resources/SpectraGreen.unity3d?moon"/>
+			<texture type="fog" path="#@modfolder:Resources/SpectraGreen.unity3d?fog"/>
+			<texture type="fogfade" path="#@modfolder:Resources/SpectraGreen.unity3d?fogfade"/>
+		</spectrum>
+		<!-- overload default spectrum -->
+		<!--
+		<spectrum name="Biome">
+			<texture type="sky" path="#@modfolder:Resources/SpectraGreen.unity3d?sky"/>
+			<texture type="ambient" path="#@modfolder:Resources/SpectraGreen.unity3d?ambient"/>
+			<texture type="sun" path="#@modfolder:Resources/SpectraGreen.unity3d?sun"/>
+			<texture type="moon" path="#@modfolder:Resources/SpectraGreen.unity3d?moon"/>
+			<texture type="fog" path="#@modfolder:Resources/SpectraGreen.unity3d?fog"/>
+			<texture type="fogfade" path="#@modfolder:Resources/SpectraGreen.unity3d?fogfade"/>
+		</spectrum>
+		-->
+	</append>
+
+	<!-- hook up new spectrum into the desert biome, snow has overriden built-in -->
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/spectrum/@name">SpectraGreen</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/spectrum/@name">SpectraGreen</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/spectrum/@name">SpectraGreen</set>
+
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/spectrum/@name">Snowy</set>
+
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+		<spectrum name="Snowy"/>
+	</append>
+
+	<!-- change some probabilites, not really related to spectrums themselves -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/@prob">5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/@prob">35</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/@prob">30</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">30</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">5</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">35</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">30</set>
+
+
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="SpectraGreen" />
+		<Description value="Demonstration for Spectra0Core Mod" />
+		<Website value="https://github.com/OCB7D2D/SpectraGreen" />
+		<Author value="ocbMaurice" />
+		<Version value="0.4.0" compat="A20"/>
+	</ModInfo>
+</xml>
