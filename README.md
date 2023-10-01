@@ -1,9 +1,9 @@
-# OCB Spectra Green Demo Mod
+# OCB Spectra Green Demo Mod for OcbCustomSpectrums
 
-Demo for https://github.com/OCB7D2D/Spectra0Core
+Demo for https://github.com/OCB7D2D/OcbCustomSpectrums
 
 ### Download and Install
 
-Simply download here from GitHub and put into your A20 Mods folder:
+Simply download here from GitHub and put into your A21 Mods folder:
 
-- https://github.com/OCB7D2D/SpectraGreen/archive/master.zip
+- https://github.com/OCB7D2D/OcbSpectraGreen/releases

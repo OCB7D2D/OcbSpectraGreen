@@ -1,6 +1,5 @@
 <configs>
-
-	<append xpath="/worldgeneration/spectra">
+	<append xpath="/worldgeneration/biomes">
 		<!-- add a new custom spectrum -->
 		<spectrum name="SpectraGreen">
 			<texture type="sky" path="#@modfolder:Resources/SpectraGreen.unity3d?sky"/>
@@ -20,16 +19,17 @@
 			<texture type="fogfade" path="#@modfolder:Resources/SpectraGreen.unity3d?fogfade"/>
 		</spectrum>
 		<!-- overload default spectrum -->
-		<!--
 		<spectrum name="Biome">
-			<texture type="sky" path="#@modfolder:Resources/SpectraGreen.unity3d?sky"/>
-			<texture type="ambient" path="#@modfolder:Resources/SpectraGreen.unity3d?ambient"/>
-			<texture type="sun" path="#@modfolder:Resources/SpectraGreen.unity3d?sun"/>
-			<texture type="moon" path="#@modfolder:Resources/SpectraGreen.unity3d?moon"/>
-			<texture type="fog" path="#@modfolder:Resources/SpectraGreen.unity3d?fog"/>
-			<texture type="fogfade" path="#@modfolder:Resources/SpectraGreen.unity3d?fogfade"/>
+			<!-- Give the sky a purple tint -->
+			<gradient type="sky">
+				<step time="5.00" color="0,0,0,255"/>
+				<step time="6.00" color="184,81,255,255"/>
+				<step time="11.00" color="107,23,255,255"/>
+				<step time="15.00" color="107,23,255,255"/>
+				<step time="17.50" color="154,210,255,255"/>
+				<step time="19.00" color="0,0,0,255"/>
+			</gradient>
 		</spectrum>
-		-->
 	</append>
 
 	<!-- hook up new spectrum into the desert biome, snow has overriden built-in -->
@@ -51,6 +51,4 @@
 	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">5</set>
 	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">35</set>
 	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">30</set>
-
-
 </configs>

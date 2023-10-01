@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9aafab5ec24e3a468cbf65f5c7e23b0, type: 3}
+  m_Name: AssetBundle
+  m_EditorClassIdentifier: 
+  Path: ..\..\..\Resources\SpectraGreen.unity3d
+  IncludeAssetsFromFolders: 0
+  SearchFoldersRecursively: 0
+  CreateDeterministicAssetBundle: 1
+  AppendHashToAssetBundleName: 1
+  Compression: 1
+  VerboseLogging: 0
+  ShowPlatformTargets: 0
+  StandaloneWindows: 1
+  StandaloneMacOSX: 0
+  StandaloneLinux: 0
+  StripRedundantAPIs: 1
+  WantD3D11: 1
+  WantOpenGL: 1
+  WantVulkan: 1
+  WantMetal: 1
+  SeparateShaders: 0
+  ShowShaderStripping: 0
+  StripMetaPass: 0
+  StripForwardBasePass: 0
+  StripForwardAddPass: 0
+  StripDeferredPass: 0
+  StripShadowCasterPass: 0
+  StripFogNone: 0
+  StripFogLinear: 1
+  StripFogExp: 0
+  StripFogExp2: 1
+  StripInstancing: 0
+  StripLightmapPlain: 1
+  StripLightmapDirCombined: 1
+  StripLightmapDynamicPlain: 1
+  StripLightmapDynamicDirCombined: 1
+  StripLightmapShadowMask: 1
+  StripLightmapSubtractive: 1
+  Objects:
+  - {fileID: 2800000, guid: 7d197e5d5aa24ed4cb5255cfc87947f5, type: 3}
+  - {fileID: 2800000, guid: 1a5fe4e2eabbb424eb71f68f4251815e, type: 3}
+  - {fileID: 2800000, guid: df655602448519b488dacc96c706f737, type: 3}
+  - {fileID: 2800000, guid: 7ff86b24f9046ba4a8b6453007dfef9b, type: 3}
+  - {fileID: 2800000, guid: 75db0f613e9b0234d867dd647ec6d893, type: 3}
+  - {fileID: 2800000, guid: 14eb87daee886c64e8015c35ff3f7f79, type: 3}
