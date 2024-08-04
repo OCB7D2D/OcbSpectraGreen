@@ -4,6 +4,6 @@ Demo for https://github.com/OCB7D2D/OcbCustomSpectrums
 
 ### Download and Install
 
-Simply download here from GitHub and put into your A21 Mods folder:
+Simply download here from GitHub and put into your Mods folder:
 
 - https://github.com/OCB7D2D/OcbSpectraGreen/releases
